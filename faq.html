@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+    <!-- TASKS BEFORE LAUNCH -->
+    <!-- 1. Round corners on buttons -->
+    <!-- 2. Booking Feature via FareHarbour -->
+    <!-- 3. Change navbar color (bluer) -->
+    <!-- 4. Mailform script -->
+    <!-- 5. Photo gallery + links -->
+    
+<head>
+  <!-- Mobirise Bootstrap Template, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="FLY SUN VALLEY v2.6.1, FLYSUNVALLEY.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/fsv_logos/fsv_366x366_blue.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
+  <link rel="stylesheet" href="assets/mobirise/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise-slider/style.css">
+  <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <style>
+    h4{
+      font-weight: heavy;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    #faq-2, #faq-3, #faq-4, #faq-5, #faq-6{
+      margin-top: 15%;
+    }
+    #faq-6{
+      margin-bottom: 10%;
+    }
+    .col-md-4{
+            padding: 2%;
+    }
+    .inside{
+      background-color: white;
+      opacity:.6;
+      padding: 2%;
+      font-size: 1.2em;
+      color:black;
+    }
+    section{
+      height:20%;
+    }
+    .faq-1-1{
+      background: url("assets/images/GOPR1464.JPG");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #border{
+      height:7%;
+      background-color: #fff;
+    }
+    .content-index{
+      float:right;
+    }
+    ul>li{
+      list-style-type: none;
+      font-size: 1.5em;
+    }
+    ul>li>a{
+      color:white;
+      text-decoration: none;
+      text-shadow:
+    -.5px -.5px 0 #000,
+    .5px -.5px 0 #000,
+    -.5px .5px 0 #000,
+    .5px .5px 0 #000;
+    }
+    .list-column-1{
+      margin-top: 5%;
+      padding: 5%;
+      margin-bottom:5%;
+    }
+    .list-column-2{
+      margin-top:23%;
+      padding:5%;
+      margin-bottom: 5%;
+    }
+    .mbr-arrow--floating{
+
+    }
+    .mbr-hero.animated.fadeInUp{
+      margin-top: 15%
+    }
+    .mbr-navbar__column.mbr-navbar__column--s.mbr-navbar__brand{
+      width: 30%;
+    }
+    .list-column-1 li a:hover{
+      text-decoration: none;
+      color:black;
+      background-color: white;
+      text-shadow:none;
+      padding-left:5px;
+      padding-right: 5px;
+    }
+    .list-column-2 li a:hover{
+      text-decoration: none;
+      color:black;
+      background-color: white;
+      text-shadow:none;
+      padding-left:3px;
+      padding-right: 3px;
+      }
+  </style>
+  
+</head>
+<body>
+
+<section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse" id="menu-74">
+    <div class="mbr-navbar__section mbr-section">
+        <div class="mbr-section__container container">
+            <div class="mbr-navbar__container">
+                <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+                    <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
+                        <span class="mbr-brand__logo"><a href="index.html"><img class="mbr-navbar__brand-img mbr-brand__img" src="assets/images/fsv_logos/fsv_366x366_lt-gray.png" alt="FLY SUN VALLEY"></a></span>
+                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.html">FLY SUN VALLEY</a></span>
+                    </span>
+                </div>
+                <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
+                <div class="mbr-navbar__column mbr-navbar__menu">
+                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                        <div class="mbr-navbar__column">
+                            <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="about.html">ABOUT</a></li>
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="flights.html">TANDEM FLIGHTS</a></li>
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="faq.html">FAQ</a></li>
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="FSVWebGallery/index.html">GALLERY</a></li>
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#contactform">CONTACT</a></li></ul></div>
+                        <div class="mbr-navbar__column">
+                            <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-default" href="#book" onclick="book_appointment()">BOOK NOW!</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar" id="header1-73" style="background-image: url(assets/images/GOPR1543_1280.JPG);">
+    <div class="mbr-box__magnet mbr-box__magnet--sm-padding mbr-box__magnet--center-left">
+        <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(22, 144, 244);">
+        </div>
+        <div class="mbr-box__container mbr-section__container container">
+            <div class="mbr-box mbr-box--stretched">
+                <div class="mbr-box__magnet mbr-box__magnet--center-left">
+                    <div class="row">
+                        <div class=" col-sm-6">
+                        <div class="mbr-hero animated fadeInUp">
+                            <h1 class="mbr-hero__text">Paragliding FAQ</h1>
+                            <h2 class="mbr-hero__text">New to Paragliding?</h2>
+                            <p class="mbr-hero__subtext">Let us answer any questions you may have here:
+                                <br>
+                            </p>
+                        </div>
+
+                    <div class="list-column-1">
+                        <ul>
+                          <li><a href="#faq-1">What is Paragliding?</a></li>
+                          <li><a href="#faq-1">Is paragliding safe?</a></li>
+                          <li><a href="#faq-2">What is the experience level of your instructors?</a></li>
+                          <li><a href="#faq-3">What are your flight times?</a></li>
+                          <li><a href="#faq-3">How much time is required to go paragliding?</a></li>
+                          <li><a href="#faq-4">What if I am prone to motion sickness?</a></li>
+                          <li><a href="#faq-5">How do we get to the top of Bald Mountain?</a></li>
+                          <li><a href="#faq-5">How do I make a flight reservation?</a></li>
+                          <li><a href="#faq-6">What shoud I wear?</a></li>
+                        </ul>
+                      </div>
+                </div>
+                      <div class="list-column-2">
+                        <ul>
+                          <li><a href="#faq-1">Is any experience required?</a></li>
+                          <li><a href="#faq-2">Are there any specific physical requirements?</a></li>
+                          <li><a href="#faq-2">Is Fly Sun Valley associated with tht Sun Valley Company/Resort?</a></li>
+                          <li><a href="#faq-3">How long are the flights?</a></li>
+                          <li><a href="#faq-4">Is there an age or weight limitation?</a></li>
+                          <li><a href="#faq-4">Do you offer pictures or video?</a></li>
+                          <li><a href="#faq-5">Where are you located?</a></li>
+                          <li><a href="#faq-6">What is the cancellation policy?</a></li>
+                          <li><a href="#faq-6">What if the weather is bad?</a></li>
+                        </ul>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mbr-arrow mbr-arrow--floating text-center">
+            <div class="mbr-section__container container">
+                <a class="mbr-arrow__link" href="#faq-1"><i class="glyphicon glyphicon-menu-down"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row faq-1-1">
+
+
+<section id="faq-1" class="mbr-box mbr-section mbr-section--relative">
+    <div class="row inside" style="opacity:.9;"> 
+        <div class="col-md-4">
+            <h4>What is paragliding?</h4>
+            <hr/>
+            <p>A paraglider is the most fun aircraft a pilot can fly!! It is the smallest &amp; lightest of wings, is silent &amp; nonpolluting and in our opinion, the purest form of flight. Keep in mind it is not a parachute or parasail. (They are designed and used for a very different type of application.) Technically a paraglider is a RAM air airfoil. Essentially it’s an airplane wing that doesn’t have a rigid frame. There is no “jumping” from a cliff or precipice. We use ski runs and slopes on the mountain as runways to launch the glider. With suitable meteorological conditions, paragliders can soar for hours, maintain altitudes thousands of feet above the ground and cover distances of hundreds of miles. </p>
+            
+            <br>
+            
+        </div>
+        <div class="col-md-4">
+            <h4>Is any experience required?</h4>
+            <hr/>
+            <p>No. That is the beauty of tandem flying. As someone with no prior paragliding experience, you will be flying with a professional instructor on a tandem glider designed to accommodate two people. Our certified instructors have been flying for many years and are the best pilots in the industry. In fact, when flying with us, you automatically become a student pilot! We make the flight as instructional as possible for your benefit and enjoyment. </p>
+            <br>
+
+</div>
+        <div class="col-md-4">
+            <h4>Is paragliding safe?</h4>
+            <hr/>
+            <p>Like all active sports and forms of aviation, (skiing, mountain biking, rafting, etc.), paragliding has inherent risks. Those risks are minimized by exercising good judgment, maintaining a professional attitude, using modern equipment, studying micrometeorology and having a wealth of experience, (and skills), to draw upon. While nothing is 100% safe, we have conducted tens of thousands of flights without a single serious injury.
+            </p>
+            
+            <br>
+<div align="right"><a href="#" target=_top> <img src="assets/images/icon_upArrow.png"></a></div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="faq-2" class="mbr-box mbr-section mbr-section--relative">
+
+    <div class="row inside" style="opacity:.9;">
+    <div class="col-md-4"> 
+    <h4>Are there any specific physical requirements?
+    </h4>
+    <hr/> 
+    <p> The physical demands are minimal. For launching, it is important that you are capable to run several steps to help generate the airspeed required to fly. As long as you can stay upright, support your weight, and obey the pilot’s commands, the rest is quite easy. Landings are generally easy as well. We come into the landing flying almost parallel to the ground. The landing “impact” is usually no more than stepping off a chair. 
+    </p> 
+            <br>
+
+    </div> 
+    <div class="col-md-4"> 
+    <h4>What is the experience level of your instructors?
+    </h4> 
+    <hr/> 
+    <p> All instructors are certified with the United States Hang Gliding and Paragliding Association and/or The Aero Sports Connection. All have many years of experience. In fact, some are former test pilots, top ranked national &amp; international competition pilots, hold various flying records, etc. We are fortunate to have some of the best professionals in the industry as part of our team. 
+    </p> 
+            <br>
+
+    </div> 
+    <div class="col-md-4"> 
+    <h4>Is Fly Sun Valley associated with the Sun Valley Company/Resort?
+    </h4> 
+    <hr/> 
+    <p> Fly Sun Valley, Inc. is an autonomous business entity. It is the only fully insured and permitted paragliding operation of the Sun Valley Resort/area. We operate with the cooperation of the SVC and through an exclusive commercial permit issued by the US Forest Service. 
+    </p> 
+            <br>
+            <div align="right"><a href="#" target=_top> <img src="assets/images/icon_upArrow.png"></a></div>
+    </div>
+
+    </div> 
+
+    </section>
+
+
+    <br/>
+
+    <!--mbr-box mbr-section mbr-section--relative-->
+
+    <section id="faq-3" class="clearfix">
+
+    <div class="row inside" style="opacity:.9;"> 
+    <div class="col-md-4"> 
+    <h4>What are your flight times?
+    </h4> 
+    <hr/> 
+    <p> Flight times vary according to the season and the exact weather/wind conditions of the day. (Summer: mostly mornings and evenings. Winter: mostly mornings and mid-afternoon.) When reserving a flight, we will go over the specific times with you. 
+    </p> 
+            <br>
+
+    </div> 
+    <div class="col-md-4"> 
+    <h4>How long are the flights?
+    </h4> 
+    <hr/> 
+    <p> Because we are a glider, (and do not have an engine), we cannot guarantee a minimum time in the air. However, at this specific flying site, anything less than 15 or 20 minutes is very rare. From the launch sites at the summit of Bald Mountain to the landing area at the base, the vertical difference is approximately 3300 feet, (1000 meters). When lift is present, flights of over 30 minutes and even more than an hour are not uncommon! Regardless of length, the experience and views are spectacular! We can guarantee that with suitable conditions we will try to stay aloft as long as we can!! 
+    </p> 
+            <br>
+
+    </div> 
+    <div class="col-md-4"> 
+    <h4>How much time is required to go paragliding?
+    </h4> 
+    <hr/> 
+    <p> Start to finish, your paragliding round-trip adventure will include, meeting at the base of the mountain, completing the required paperwork, getting to the top, setting up, launching &amp; flying and landing back close to where we started. Because paragliding is such a wind/weather dependent activity, the time required varies. Considering the variables, one can expect the whole experience to require 1 ½ - 2 hours on average and on rare occasion, up to 3 hours. 
+    </p> 
+            <br>
+            <div align="right"><a href="#" target=_top> <img src="assets/images/icon_upArrow.png"></a></div>
+    </div>
+
+    </div>
+
+    </section>
+
+
+    <br/>
+
+
+    <section id="faq-4" class="clearfix">
+
+    <div class="row inside"style="opacity:.9;"> 
+    <div class="col-md-4"> 
+    <h4>Is there an age or weight limitation?
+    </h4> 
+    <hr/> 
+    <p> There is no age requirement or restriction. We have flown people of all ages from 3-93 so far…and lots of kids! However, prior to booking very young children, we like to discuss details with the parents. For minors 17 years and younger, a parent or guardian can co-sign their paperwork. The weight limitation is determined by several variables including the exact wind conditions of the day and the discretion of the instructor. Generally speaking, as to not exceed the placarded weight limit of the glider, a participant’s weight limit is approximately 240 lbs. 
+    </p> 
+            <br>
+            
+    </div> 
+    <div class="col-md-4"> 
+    <h4>What if I am prone to motion sickness?
+    </h4> 
+    <hr> 
+    <p> While aerial discomfort is highly unlikely, if a participant is susceptible to motion sickness, we recommend taking the appropriate precautions and notifying the pilot prior to departure. Our staff pilots are the finest and most experienced in the country, committed to make your flight an exciting, comfortable, secure and unforgettable experience. 
+    </p> 
+            <br>
+    </div> 
+    <div class="col-md-4"> 
+    <h4>Do you offer pictures or video?
+    </h4> 
+    <hr> 
+    <p> Yes, on most flights. Our instructors fly with GoPro cameras on telescoping poles, (selfie-sticks). We shoot numerous images and HD video during your flight. There is an added fee for this service and we have a full money back guarantee if you are unsatisfied with the results. (Examples of the service can be found in the “Gallery” section of this website.) The complete data of images and video are given to you on a micro SD card directly following your flight. It is a state-of-the-art ScanDisc Ultra Class 10, 8GB card with a SD adapter ready to reuse in any electronic device you may have. 
+    </p> 
+            <br>
+            <div align="right"><a href="#" target=_top> <img src="assets/images/icon_upArrow.png"></a></div>
+    </div>
+
+    </div>
+
+    </section>
+
+
+    <br/>
+
+
+    <section id="faq-5" class="clearfix">
+
+    <div class="row inside" style="opacity:.9;"> 
+    <div class="col-md-4"> 
+    <h4>How do we get to the top of Bald Mountain?
+    </h4> 
+    <hr/> 
+    <p> During the summer season, we access the mountain one of two methods. For the early morning and evening times, we supply transportation up the mountain in our company 4x4. Any time between 9am and 3pm, we are obligated to use the SVC gondola. In the winter season, all access in via the Sun Valley Company chairlifts/gondola. 
+    <strong>Participants are responsible for gondola passes.</strong> 
+    </p> 
+            <br>
+            
+    </div> 
+    <div class="col-md-4"> 
+    <h4>Where are you located?
+    </h4> 
+    <hr/> 
+    <p> Our office is located at 160 4th Street West in downtown Ketchum, directly across the street from the Ketchum Post office. However, when someone has a tandem flight scheduled with us, we usually meet at the River Run Lodge or at our landing zone. (See maps on this webpage for locations) 
+    </p> 
+            <br>
+            
+    </div> 
+    <div class="col-md-4"> 
+    <h4>How do I make a flight reservation?
+    </h4> 
+    <hr/> 
+    <p> Bookings can be made via 
+    <a href="#book" onclick="book_appointment()">here
+    </a>, at our office, email or by phone. When reserving a time we will need the names of the participants, their estimated weights, contact phone number and credit card info to hold the reservation. Payment is processed in the landing area after the flights are completed. Participants can pay together or separately. Checks, cash and credit cards are accepted. 
+    </p> 
+            <br>
+            <div align="right"><a href="#" target=_top> <img src="assets/images/icon_upArrow.png"></a></div>
+    </div>
+
+    </div>
+
+    </section>
+
+
+    <br/>
+
+
+    <section id="faq-6" class="clearfix">
+
+    <div class="row inside"style="opacity:.9;">
+        <div class="col-md-4"> 
+    <h4>What is the cancellation policy?
+    </h4> 
+    <hr/> 
+    <p> Because of the nature of the business, we must have strict cancellation policy. Cancellations within 36 hours may incur a 40% fee. Cancellations within 24 hours, will be charged in full if we cannot fill the cancelled slots. There is no charge for cancellations with at least 36 hours notice. 
+    </p> 
+            <br>
+            
+    </div> 
+    <div class="col-md-4"> 
+    <h4>What should I wear?
+    </h4> 
+    <hr/> 
+    <p> Wind chill protection and proper footwear are the highest priorities to enhance the enjoyment and comfort of your tandem flight. Participants should be prepared for temperatures significantly cooler than what may be found in downtown Sun Valley/Ketchum. A thermal layer with a wind stopping outer shell jacket is most desirable. Athletic wear such as sneakers/tennis shoes or hiking/trail boots are required. (Teva’s, sandals, clogs, etc. are unacceptable.) Long pants are also required. Sunglasses are normally recommended. In the winter, ski attire with a winter boot or soft-shell snowboarding boot is suitable. 
+    </p> 
+            <br>
+            
+    </div> 
+    <div class="col-md-4"> 
+    <h4>What if the weather is bad?
+    </h4> 
+    <hr> 
+    <p> Like all mountain flying sites, this area has complex weather. Meteorology is not an exact science and is dynamic. However we have decades of experience forecasting the conditions. We utilize numerous sources of information to help us make the correct judgment calls about the weather. There are many variables in the equation. Sometimes clear sunny days are not flyable and cloudy days are best. Other times, vice versa. Either way, the paramount concern is the safety of you and us. If the wind/weather prohibits us from flying at your scheduled time, there is no charge and we will reschedule for the next convenient time. 
+    </p> 
+            <br>
+            <div align="right"><a href="#" target=_top> <img src="assets/images/icon_upArrow.png"></a></div>
+    </div>
+
+    </div>
+
+    </section>
+
+</div>
+<!-- class="faq-1-1" END-->
+
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="form1-89" style="background-color: rgb(222, 222, 222);">
+    <a name="contactform" id="contactform"></a>
+    <div class="mbr-section__container mbr-section__container--std-padding container"> 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">CONTACT US TODAY!</h2>
+                            <p>Call our office at 208-726-3332 with any questions or send a message below. We’ll get back to you as soon as we can. We look forward to flying with you!</p>
+                            <p>Fly Sun Valley is a full service establishment providing tandem flights, flight instruction, equipment sales &amp;service. Our office is located in downtown Ketchum, at 160 4th West, across the street from the Ketchum Post Office. (N. 43o 40.763' W. 114o 22.018')</p>
+                        </div>
+                        <div data-form-alert="true"></div>
+                        <form action="forms/FSVContact.php" method="post" data-form-title="FSV_CONTACT FORM">
+                            <input type="hidden" value="" data-form-email="true">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="named" required="" placeholder="Name*" data-form-field="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="emailed" required="" placeholder="Email*" data-form-field="Email">
+                            </div>
+                           <!-- <div class="form-group">
+                                <input type="email" class="form-control" name="emaileder" required="" placeholder="Confirm Email*" data-form-field="Email">
+                            </div>-->
+                            <div class="form-group">
+                                <input type="tel" class="form-control" name="phoned" placeholder="Phone" data-form-field="Phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="messaged" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                            </div>
+                            <div class="mbr-buttons mbr-buttons--right"><button type="submit" name="submitted" class="mbr-buttons__btn btn btn-lg btn-warning">SEND IT!</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br/><br/><hr/>
+            
+</section>
+
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="form1-90" style="background-color: rgb(200, 200, 200); display:none;">
+    <a name="book" id="book"></a>
+    <div class="mbr-section__container mbr-section__container--std-padding container"> 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">Book An Appointment Today!</h2>
+                            <p>Are you ready for the experience of a lifetime? Let's soar the skies over the Sun Valley Resort together! Please fill out the form below with your basic info, number of people in your party, desired date and we will get back to you as soon as possible with flight options.</p>
+                        </div>
+                        <div data-form-alert="true"></div>
+                        <form action="forms/FSVAppointment.php" method="post" data-form-title="FSV_CONTACT FORM">
+                    <fieldset>
+                        <legend>Basic Info</legend>
+                        <input type="hidden" value="" data-form-email="true">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="app_name" required="" placeholder="Name*" data-form-field="Name">
+                        </div>
+                        <div class="form-group">
+                        <input type="email" class="form-control" name="app_email" required="" placeholder="Email*" data-form-field="Email">
+                        </div>
+                        <div class="form-group">
+                        <input type="email" class="form-control" name="app_email_conf" required="" placeholder="Confirm Email*" data-form-field="Confirm_Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="app_phone" placeholder="Phone" data-form-field="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" name="app_date" placeholder="Date to Fly:" data-form-field="date" xa>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="app_fliers" placeholder="Name, age and estimated weight of group members. One person per line" rows="7" data-form-field="Message"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <input class="form-control" type="checkbox" name="terms" data-form-field="terms" placeholder="" required><p><strong>I have read and understand and agree to the terms put forth regarding <a href="faq.html">cancellations, acknowledgment of risk and weather</a>.</strong></p>
+                    </div>
+                    <div class="mbr-buttons mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-warning">SEND IT!</button></div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            
+</section>
+
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="contacts2-90" style="background-color: rgb(60, 60, 60);">
+    
+    <div class="mbr-section__container container">
+        <div class="mbr-contacts mbr-contacts--wysiwyg row">
+            <div class="col-sm-6">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.2070804975597!2d-114.37140980750989!3d43.679294641709795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDQwJzQ1LjkiTiAxMTTCsDIyJzA5LjMiVw!5e0!3m2!1sen!2sus!4v1475360459590" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <p class="mbr-contacts__text"><strong>ADDRESS</strong><br>
+                            P.O. Box 6632<br>
+                            160 W. 4th Street<br>
+                            Ketchum ID 83340<br><br>
+<strong>CONTACT US</strong><br>
+                            Email: <a href="mailto:info@flysunvalley.com?subject=Contact from the FSV Web Site">info@flysunvalley.com</a><br>
+Phone: +1 (208) 726-3332<br>
+                    </div>
+                    <div class="col-sm-6"><p class="mbr-contacts__text"><strong>LINKS</strong></p><ul class="mbr-contacts__list"><li>
+                        <a href="pilots.html" class="text-gray">Visiting Pilots</a><a class="mbr-contacts__link text-gray" href="#"></a></li><li>
+                        <a href="pilots.html#weather" class="text-gray">Bald Mountain Weather</a><a class="mbr-contacts__link text-gray" href="#"></a></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-91" style="background-color: rgb(68, 68, 68);">
+    
+    <div class="mbr-section__container container">
+        <div class="mbr-footer mbr-footer--wysiwyg row">
+            <div class="col-sm-12">
+                <p class="mbr-footer__copyright"></p><p>Copyright (c) 2016 FLY SUN VALLEY. All rights expressly reserved. 
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+  <script src="assets/jarallax/jarallax.js"></script>
+  <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+  <script src="assets/masonry/masonry.pkgd.min.js"></script>
+  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/social-likes/social-likes.js"></script>
+  <script src="assets/mobirise/js/script.js"></script>
+  <script src="assets/mobirise-gallery/script.js"></script>
+  <script>
+    function book_appointment(){
+            $("#form1-90").show();
+        };
+</script>
+
+  
+  
+</body>
+</html>

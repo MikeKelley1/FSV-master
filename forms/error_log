@@ -1,0 +1,59 @@
+[04-Jul-2016 15:54:51 America/New_York] PHP Parse error:  syntax error, unexpected 'setSubject' (T_STRING) in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 118
+[04-Jul-2016 15:57:11 America/New_York] PHP Parse error:  syntax error, unexpected '$message' (T_VARIABLE) in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 119
+[04-Jul-2016 15:58:01 America/New_York] PHP Fatal error:  Class 'Swift_Message' not found in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 116
+[04-Jul-2016 15:59:41 America/New_York] PHP Warning:  require_once(lib/swift_required.php): failed to open stream: No such file or directory in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 4
+[04-Jul-2016 15:59:41 America/New_York] PHP Fatal error:  require_once(): Failed opening required 'lib/swift_required.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 4
+[04-Jul-2016 16:01:18 America/New_York] PHP Fatal error:  Class 'Swift_Message' not found in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 116
+[04-Jul-2016 16:02:34 America/New_York] PHP Warning:  require_once(lib/swift_required.php): failed to open stream: No such file or directory in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 116
+[04-Jul-2016 16:07:18 America/New_York] PHP Warning:  require_once(vender/swiftmailer/swiftmailer/lib/swift_required.php): failed to open stream: No such file or directory in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 116
+[04-Jul-2016 16:08:27 America/New_York] PHP Fatal error:  Call to undefined function setSubject() in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 120
+[04-Jul-2016 18:38:45 America/New_York] PHP Parse error:  syntax error, unexpected '$message' (T_VARIABLE) in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 122
+[04-Jul-2016 18:39:51 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 144
+[04-Jul-2016 18:40:23 America/New_York] PHP Fatal error:  Call to a member function send() on a non-object in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 143
+[04-Jul-2016 18:41:43 America/New_York] PHP Fatal error:  Call to a member function send() on a non-object in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 143
+[04-Jul-2016 18:44:47 America/New_York] PHP Fatal error:  Call to a member function send() on a non-object in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 132
+[04-Jul-2016 18:45:14 America/New_York] PHP Fatal error:  Call to a member function send() on a non-object in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 131
+[04-Jul-2016 18:48:24 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 130
+[04-Jul-2016 18:49:06 America/New_York] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE), expecting ',' or ';' in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 132
+[04-Jul-2016 18:49:57 America/New_York] PHP Fatal error:  Call to a member function send() on a non-object in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 132
+[04-Jul-2016 18:51:18 America/New_York] PHP Fatal error:  Call to a member function send() on a non-object in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 131
+[04-Jul-2016 18:53:00 America/New_York] PHP Fatal error:  Uncaught exception 'Swift_TransportException' with message 'Connection could not be established with host smtp.kelleywebdevelopment.tech [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]' in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php:269
+Stack trace:
+#0 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php(62): Swift_Transport_StreamBuffer->_establishSocketConnection()
+#1 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(113): Swift_Transport_StreamBuffer->initialize(Array)
+#2 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/kellrtbs/public_html/forms/FSVAppointment.php(133): Swift_Mailer->send(Object(Swift_Message))
+#4 {main}
+  thrown in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php on line 269
+[04-Jul-2016 18:57:07 America/New_York] PHP Fatal error:  Uncaught exception 'Swift_TransportException' with message 'Connection could not be established with host smtp.server194.web-hosting.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]' in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php:269
+Stack trace:
+#0 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php(62): Swift_Transport_StreamBuffer->_establishSocketConnection()
+#1 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(113): Swift_Transport_StreamBuffer->initialize(Array)
+#2 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/kellrtbs/public_html/forms/FSVAppointment.php(133): Swift_Mailer->send(Object(Swift_Message))
+#4 {main}
+  thrown in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php on line 269
+[04-Jul-2016 18:58:38 America/New_York] PHP Fatal error:  Uncaught exception 'Swift_TransportException' with message 'Connection to server194.web-hosting.com:465 Timed Out' in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php:404
+Stack trace:
+#0 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(289): Swift_Transport_AbstractSmtpTransport->_getFullResponse(0)
+#1 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(117): Swift_Transport_AbstractSmtpTransport->_readGreeting()
+#2 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/kellrtbs/public_html/forms/FSVAppointment.php(133): Swift_Mailer->send(Object(Swift_Message))
+#4 {main}
+  thrown in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php on line 404
+[04-Jul-2016 19:00:06 America/New_York] PHP Fatal error:  Uncaught exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "mailbot" using 2 possible authenticators' in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:181
+Stack trace:
+#0 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(334): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(118): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(79): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/kellrtbs/public_html/forms/FSVAppointment.php(133): Swift_Mailer->send(Object(Swift_Message))
+#4 {main}
+  thrown in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php on line 181
+[04-Jul-2016 19:05:15 America/New_York] PHP Parse error:  syntax error, unexpected ':' in /home/kellrtbs/public_html/forms/FSVAppointment.php on line 131
+[04-Jul-2016 19:26:45 America/New_York] PHP Fatal error:  Uncaught exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [$FTGemailed] does not comply with RFC 2822, 3.6.2.' in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php:348
+Stack trace:
+#0 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(263): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('$FTGemailed')
+#1 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(106): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(63): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(58): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /home/kellrtbs/public_html/vendor/swiftmailer/ in /home/kellrtbs/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php on line 348

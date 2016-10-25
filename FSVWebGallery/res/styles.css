@@ -1,0 +1,27 @@
+/*
+ * Cement jAlbum Skin Rel. 1.2 (c) Pierre M. 2013
+ *
+ * Combined style sheet for the index pages and the slide pages, with only classes that are different for this style
+ */
+
+body {
+	color: #eeeeee;
+	background-color: #000000;
+}
+a {
+	color: #eeeeee;
+}
+#filter-by,
+#sort-by {
+	border-color: #eeeeee;
+}
+.bgcolor {
+	background-color: #000000;
+}
+.fgcolor {
+	color: #eeeeee;
+}
+.forkit-curtain {
+	background: rgba( 0, 0, 0, 0.8 );
+}
+

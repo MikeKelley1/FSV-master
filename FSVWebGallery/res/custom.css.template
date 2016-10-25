@@ -1,0 +1,17 @@
+/*	Additional stylesheet loaded after all other style sheets.
+ *	End-users can here overwirte any style defined in the cement skin
+ *  to her or his linking.
+ *	
+ */
+@import url(http://fonts.googleapis.com/css?family=Oxygen:300,400,700);
+body {
+	font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+}
